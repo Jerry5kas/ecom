@@ -1,10 +1,12 @@
 <div
     class="w-full
  bg-gray-100 shadow-md rounded-lg font-lex h-auto border hover:border-pink-600 hover:shadow-blue-200 transition-all duration-500 ease-in-out ">
-    <div class="overflow-hidden rounded">
-        <img src="{{ asset('images/prod-1.webp') }}" alt="product-image"
-            class=" w-full h-52 object-cover transition duration-500 ease-in-out hover:scale-105">
-    </div>
+    <a href="{{ route('product.details') }}">
+        <div class="overflow-hidden rounded">
+            <img src="{{ asset('images/prod-1.webp') }}" alt="product-image"
+                class=" w-full h-52 object-cover transition duration-500 ease-in-out hover:scale-105">
+        </div>
+    </a>
     <div class=" text-xs text-gray-600 tracking-wider leading-loose  p-3 space-y-5">
         <div class="line-clamp-3">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae blanditiis dicta
             dolorum, earum eius et

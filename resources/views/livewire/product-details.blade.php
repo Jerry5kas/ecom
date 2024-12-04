@@ -10,7 +10,7 @@
             class="w-2/3 text-xs text-gray-600 tracking-wider leading-loose  p-3 space-y-5 flex flex-col justify-evenly">
             <div class="line-clamp-3 text-md">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae blanditiis
                 dicta
-                dolorum, earum eius et
+                dolorum, earum eius et`
                 eum expedita in ipsum magni molestiae officia, sed vitae? Hic, officiis.
             </div>
             <div class="flex items-center justify-between">
