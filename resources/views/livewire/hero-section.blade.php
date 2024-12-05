@@ -11,12 +11,23 @@
             </p>
 
             <div class="mt-8 flex flex-wrap justify-center gap-4">
-                <a class="block w-full rounded bg-pink-600 px-12 py-3 text-sm font-medium text-white shadow hover:bg-pink-700 focus:outline-none focus:ring focus:ring-pink-200 active:bg-pink-500 sm:w-auto" href="#">
-                    Get Started
-                </a>
-                <a class="block w-full rounded px-12 py-3 text-sm font-medium text-pink-600 shadow hover:text-pink-700 focus:outline-none focus:ring focus:ring-pink-200 active:text-red-500 sm:w-auto" href="#">
+                @if (auth()->check())
+                    <a class="block w-full rounded bg-pink-600 px-12 py-3 text-sm font-medium text-white shadow hover:bg-pink-700 focus:outline-none focus:ring focus:ring-pink-200 active:bg-pink-500 sm:w-auto"
+                        href="/offer">
+                        Redeem Your Offer Now!
+                    </a>
+                @else
+                    <a class="block w-full rounded bg-pink-600 px-12 py-3 text-sm font-medium text-white shadow hover:bg-pink-700 focus:outline-none focus:ring focus:ring-pink-200 active:bg-pink-500 sm:w-auto"
+                        href="/auth/login">
+                        Get Started
+                    </a>
+                @endif
+
+                <a class="block w-full rounded px-12 py-3 text-sm font-medium text-pink-600 shadow hover:text-pink-700 focus:outline-none focus:ring focus:ring-pink-200 active:text-red-500 sm:w-auto"
+                    href="#">
                     Learn More
                 </a>
+
             </div>
         </div>
     </div>
